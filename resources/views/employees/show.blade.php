@@ -5,7 +5,8 @@
     <h1 class="text-center">Employee Details</h1>
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title font-bold">{{ $employee->name }}</h5>
+            <h5 class="card-title text-bold">{{ $employee->nik }}</h5>
+            <h5 class="card-title text-bold">{{ $employee->name }}</h5>
             <p class="card-text">Position: {{ $employee->position }}</p>
             <p class="card-text">Department: {{ $employee->department }}</p>
             <p class="card-text">Date of Hire: {{ $employee->date_of_hire }}</p>

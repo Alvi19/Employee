@@ -12,6 +12,7 @@
     <table class="table" id="employees-table">
         <thead>
             <tr>
+                <th>Nik</th>
                 <th>Name</th>
                 <th>Position</th>
                 <th>Department</th>
@@ -22,6 +23,7 @@
         <tbody>
             @foreach ($employees as $employee)
                 <tr>
+                    <td>{{ $employee->nik }}</td>
                     <td>{{ $employee->name }}</td>
                     <td>{{ $employee->position }}</td>
                     <td>{{ $employee->department }}</td>

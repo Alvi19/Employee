@@ -17,6 +17,7 @@ class EmployeeFactory extends Factory
     public function definition(): array
     {
         return [
+            'nik' => $this->faker->randomNumber(),
             'name' => $this->faker->name,
             'position' => $this->faker->jobTitle,
             'department' => $this->faker->randomElement(['HR', 'Engineering', 'Sales', 'Marketing', 'Finance']),
